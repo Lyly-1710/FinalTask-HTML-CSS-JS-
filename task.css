@@ -2,6 +2,14 @@ body
 {
     font-family: "Plus Jakarta Sans", sans-serif;
     margin: 2vw;
+ 
+}
+.logout button
+{
+    width: 4vw;
+    height: 3vw;    
+    border-radius: 10px;
+    margin-left: 90%;
 }
 .logo
 {
@@ -46,6 +54,7 @@ body
         {
             background-color: #E74C3C;
         }
+        
     }
 
     
@@ -190,6 +199,8 @@ body
 #todo-list
 {
     width: 15vw;
+  
+  
 }
 #task
 {

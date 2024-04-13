@@ -129,5 +129,8 @@ function editTodo()
     display(); 
     delTask(num);
 }
-
+function out()
+{
+    window.location.href = "./index.html";
+}
 
