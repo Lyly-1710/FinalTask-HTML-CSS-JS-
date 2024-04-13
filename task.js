@@ -128,6 +128,7 @@ function editTodo()
     localStorage.setItem('todo-list', JSON.stringify(items));
     display(); 
     delTask(num);
+    document.getElementById("edittask").style.display = "none";
 }
 function out()
 {
