@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="task.css" class="">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+           <img src="./svgfile\svgfile\logotask.svg" alt="">
+        </div>
+        <div id="new" onclick="overlay()">
+            <i class="fa-solid fa-plus"></i>
+            <span>&ensp;New task</span>
+        </div>
+        <div id="addTask">
+            <div id="addContainer" >
+                <div class="btnclose" onclick = "aclose()">
+                    <i class="fa-solid fa-x" ></i>
+                </div>
+                <h2 class="header">Add new todo</h2>
+                <div >
+                    <form action="" method="post" id="addForm">
+                        <div>
+                            <input type="text" value="" name="" id="Cate" placeholder="Category Etc: Markerting..." required > 
+                        </div>
+                        <div>
+                            <input type="text" value="" name="" id="Title" placeholder="Title" required >
+                        </div>
+                        <div>
+                            <input type="text" value="" name="" id="Content" placeholder="Content" required >
+                        </div>
+                        <button type="button" id ="addBtn" onclick="addTodo()">Submit</button>
+                    </form>
+                </div>  
+            </div>
+        </div>
+        <div id="edittask">
+            <div id="editContainer" >
+                <div class="btnclose" onclick = "eclose()">
+                    <i class="fa-solid fa-x" ></i>
+                </div>
+                <h2 class="header">Edit todo</h2>
+                <div >
+                    <form action="" method="post" id="addForm">
+                        <div>
+                            <input type="text" value="" name="" id="eCate" placeholder="Category Etc: Markerting..." required > 
+                        </div>
+                        <div>
+                            <input type="text" value="" name="" id="eTitle" placeholder="Title" required >
+                        </div>
+                        <div>
+                            <input type="text" value="" name="" id="eContent" placeholder="Content" required >
+                        </div>
+                        <div class="stt">
+                            <div class="tdstt">
+                                <input type="radio" name="" id="Todo">Todo
+                            </div>
+                            <div class="doingstt">
+                                <input type="radio" name="" id="Doing">Doing
+                            </div>
+                            <div class="finishedstt">
+                                
+                                <input type="radio" name="" id="Finished">Finished
+                            </div>
+                        </div>
+                        
+                        <button type="button" id ="addBtn" onclick="editTodo()">Submit</button>
+                    </form>
+                </div>  
+            </div>
+        </div>
+        <div class="taskContainer">
+            <div class="todo">
+                <p id ="T" >&ensp;Todo</p>
+                <div class="line" style="background-color:#00A6DA;;"></div>
+                <div id="todo-list"></div>
+            </div>
+            <div class="doing">
+              
+                <p id = "D">&ensp;Doing</p>
+                <div class="line" style="background-color: #CCAC038F"></div>
+            </div>
+            <div class="completed">
+             
+                <p id = "C">&ensp;Completed</p>
+                <div class="line" style="background-color: #3BC057"></div>
+            </div>
+            <div class="Blocked">
+                
+                <p id = "B">&ensp;Blocked</p>
+                <div class="line" style="background-color: #E74C3C"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+    </script>
+    <script src="task.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+body
+{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 2vw;
+}
+.logo
+{
+    margin-left: 2vw;
+}
+#new
+{
+    display: flex;
+    margin-left: 87vw;
+    align-items: center;
+    width: fit-content;
+}
+.taskContainer
+{
+    display: inline-flex;
+    margin: 2vw 2vw;
+    div
+    {
+        margin-right: 2vw;
+        p
+        {
+            width: 20vw;
+            height: 2vw;
+            align-content: center;
+            color: #FFFFFF;
+            font-weight: 0.5em;
+        }
+        #T
+        {
+            background-color: #00A6DA;
+     
+        }
+        #D
+        {
+            background-color: #CCAC038F;
+        }
+        #C
+        {
+            background-color: #3BC057;
+        }
+        #B
+        {
+            background-color: #E74C3C;
+        }
+    }
+
+    
+}
+#addForm
+{
+    div
+    {
+        margin: 1vw;    
+    }
+}
+#addTask
+{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    input 
+    {
+        border-radius: 5px;
+        border-color: darkgray;
+        
+    };
+    input:focus
+    {
+        border-color: black;
+    }
+    input:valid {
+        border-color: hsl(120, 76%, 50%);
+    }
+    input:invalid {
+        border-color: red;
+    }
+    #addContainer
+    {
+        width: 35vw;
+        height: 20vw;
+        text-align: center;
+        background-color:#FFFFFF;
+        i
+        {
+            margin-left: 90%;
+            margin-top: 2%;
+        }
+        .header
+        {
+            
+            margin-bottom: 1vw;
+            color:gray;
+        }
+        input 
+        {
+            width: 32vw;
+        }
+        #Content
+        {
+            height: 5vw;
+        }
+        #addBtn
+        {
+            width: 32vw;
+            border-radius: 8px;
+            height: 25px;
+        }
+    }
+}
+#edittask
+{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    #editContainer
+    {
+       
+        width: 35vw;
+        height: 25vw;
+        text-align: center;
+        background-color:#FFFFFF;
+    }
+    .btnclose
+    {
+        margin-left: 90%;
+        margin-top: 1vw;
+    }
+    .header
+    {
+        
+        margin-bottom: 1vw;
+        color:gray;
+    }
+    #Cate, #Title, #Content
+    {
+        width: 32vw;    
+    }
+    #Content
+    {
+        height: 5vw;
+    }
+    #addBtn
+    {
+        width: 32vw;
+        border-radius: 8px;
+        height: 25px;
+    }
+}
+.task img
+{
+    width: 20vw;
+}
+.hand img
+{
+    width: 2vw;
+    margin-left: 15vw;
+}
+.line
+{
+    width: 20vw;
+    margin: 0;
+    height: 0.5vh;
+    margin-top: 1vw;
+
+}
+#todo-list
+{
+    width: 15vw;
+}
+#task
+{
+    width: 20vw;
+    height: 15vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    box-shadow: 1px 4px  rgba(0, 0, 0, 0.1) ;
+    border-radius: 8px;
+    h1
+    {
+        margin-top: 1.5vw;
+    }
+    #content
+    {
+        margin-top: 1.5vw;
+    }
+    .h1_line
+    {
+        width: 15vw;
+        margin: 0;
+        height: 0.2vh;
+        margin-top: 1vw;
+        background-color: darkgray;
+    }
+}
+#taskHeader
+{
+   display: inline-flex;
+   justify-content: space-between;
+   width: 100%;
+ 
+}
+#category
+{
+    color: #4D8EFF;
+    text-decoration: underline;
+    display: inline-flex;
+
+    i
+    {
+        color: black;
+        background-color: #FFFFFF;
+    }
+}
+.stt 
+{
+    display: inline-flex;
+}
